@@ -30,5 +30,5 @@ O endereço do servidor, usuário e key ficarão registradas nas secrets do gith
  
 *Se você não tiver chave privada, você pode executar **ssh-keygen** no terminal do servidor para gerar uma nova chave, em seguida, execute o comando **cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys** para permitir a conexão com o privado chave*
 
-*Você pode ter erros de credenciais quando o script tentar executar o git pull, uma solução seria alterar o remote para ssh, ou rodar esse comando: **git config credential.helper cache**.*
+*Você pode ter erros de credenciais quando o script tentar executar o git pull, uma solução seria alterar o remote para ssh, ou rodar esse comando: **git config credential.helper store**.*
 
