@@ -1,0 +1,25 @@
+name: Laravel Deploy
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Deploy para Produção
+      uses: appleboy/ssh-action@master
+      with:
+        username: YOUR USERNAME GOES HERE
+        host: YOUR SERVER'S HOSTNAME GOES HERE
+        password: ${{ secrets.SSH_PASSWORD }}
+        script: |
+          php artisan down
+          cd /var/www/html/NOME_APLICACAO
+          git pull origin main
+          composer install
+          php artisan migrate --seed
+          service supervisor restart
+          php artisan view:clear
+          php artisan up
