@@ -7,7 +7,7 @@
 
 <p align="center">
 ▸ <a href="https://github.com/tiagointerativa/template-deploy-github-actions/blob/main/template-laravel.yml">Template Laravel</a> |
-▸ <a style="pointer-events: none;" href="https://github.com/tiagointerativa/template-deploy-github-actions/blob/main/template-laravel.yml">Template Angular</a>
+▸ <a style="pointer-events: none;" href="https://github.com/tiagointerativa/template-deploy-github-actions/blob/main/template-angular.yml">Template Angular</a>
 
 </p>
 
