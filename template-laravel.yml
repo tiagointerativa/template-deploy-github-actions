@@ -11,12 +11,14 @@ jobs:
     - name: Deploy para Produção
       uses: appleboy/ssh-action@master
       with:
-        username: YOUR USERNAME GOES HERE
-        host: YOUR SERVER'S HOSTNAME GOES HERE
+        username: USER NAME DO SERVIDOR AQUI
+        host: NOME DO HOST AQUI
         password: ${{ secrets.SSH_PASSWORD }}
+        #CASO FOR UTILIZAR CONEXÃO VIA SSH, DESCOMENTE O CAMPO ABAIXO E COMENTE O CAMPO ACIMA
+        #key: KEY SSH AQUI
         script: |
-          php artisan down
           cd /var/www/html/NOME_APLICACAO
+          php artisan down
           git pull origin main
           composer install
           php artisan migrate --seed
