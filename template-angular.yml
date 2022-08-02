@@ -1,0 +1,21 @@
+name: Angular Deploy
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Deploy para Produção
+      uses: appleboy/ssh-action@master
+      with:
+        username: ${{ secrets.PRODUCAO_USER }}
+        host: ${{ secrets.PRODUCAO_HOST }}
+        password: ${{ secrets.PRODUCAO_PASSWORD }}
+        #CASO FOR UTILIZAR CONEXÃO VIA SSH, DESCOMENTE O CAMPO ABAIXO E COMENTE O CAMPO ACIMA
+        #key: ${{ secrets.PRODUCAO_SSH }}
+        script: |
+          cd /var/www/html/NOME_APLICACAO
+          git pull origin main
