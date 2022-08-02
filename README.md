@@ -4,6 +4,11 @@
 <h3 align="center">Deploy via Github Actions</h3>
 
 <p align="center">Repositório com templates que podem ser utilizados nas github actions de projetos laravel e angular.</p>
+
+<p align="center">
+▸ <a href="https://github.com/tiagointerativa/template-deploy-github-actions/blob/main/template-laravel.yml">Template Laravel</a> |
+▸ <a style="pointer-events: none;" href="https://github.com/tiagointerativa/template-deploy-github-actions/blob/main/template-laravel.yml">Template Agnular</a>
+
 </p>
 
 ## ❔ Onde colocar o arquivo .yml?
