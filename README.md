@@ -1,7 +1,7 @@
 <p align="center">
  
 <img src="https://icon-library.com/images/deploy-icon/deploy-icon-8.jpg" width="120">
-<h3 align="center">Templates - Deploy via Github Actions</h3>
+<h3 align="center">Deploy via Github Actions</h3>
 
 <p align="center">Repositório com templates que podem ser utilizados nas github actions de projetos laravel e angular.</p>
 </p>
