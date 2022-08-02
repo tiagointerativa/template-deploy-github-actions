@@ -26,12 +26,22 @@ O endereço do servidor, usuário e key ficarão registradas nas secrets do gith
  - Acesse **Settings**.
  - No menu a esquerda, clique em **SECRETS** > **ACTIONS**.
  - Agora clique em **NEW REPOSITORY SECRET** e crie as seguintes chaves.
- - **PROD_HOST**: *Deve ser informado o host do servidor*
- - **PROD_USER**: *Deve ser informado o usurio de acesso ao servidor*
- - **PROD_PORT**: *Deve ser informado a porta de acesso ao servidor*
- - **PROD_KEY**: *Deve ser informado a chave privada (Para ver a chave privada rode o comando: **cat ~/.ssh/id_rsa**)*
- - **PROD_PASSWORD**: *Caso não queira utilizar chave ssh, pode ser utilizado password.*
  
+ ➤ **PRODUÇÃO**
+ 
+ - **PRODUCAO_HOST**: *Deve ser informado o host do servidor*
+ - **PRODUCAO_USER**: *Deve ser informado o usurio de acesso ao servidor*
+ - **PRODUCAO_PORT**: *Deve ser informado a porta de acesso ao servidor*
+ - **PRODUCAO_KEY**: *Deve ser informado a chave privada (Para ver a chave privada rode o comando: **cat ~/.ssh/id_rsa**)*
+ - **PRODUCAO_PASSWORD**: *Caso não queira utilizar chave ssh, pode ser utilizado password.*
+ 
+  ➤ **HOMOLOGAÇÃO**
+  
+ - **HOMOLOGACAO_HOST**: *Deve ser informado o host do servidor*
+ - **HOMOLOGACAO_USER**: *Deve ser informado o usurio de acesso ao servidor*
+ - **HOMOLOGACAO_PORT**: *Deve ser informado a porta de acesso ao servidor*
+ - **HOMOLOGACAO_KEY**: *Deve ser informado a chave privada (Para ver a chave privada rode o comando: **cat ~/.ssh/id_rsa**)*
+ - **HOMOLOGACAO_PASSWORD**: *Caso não queira utilizar chave ssh, pode ser utilizado password.*
  
 *Se você não tiver chave privada, você pode executar **ssh-keygen** no terminal do servidor para gerar uma nova chave, em seguida, execute o comando **cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys** para permitir a conexão com o privado chave*
 
