@@ -11,11 +11,11 @@ jobs:
     - name: Deploy para Produção
       uses: appleboy/ssh-action@master
       with:
-        username: USER NAME DO SERVIDOR AQUI
-        host: NOME DO HOST AQUI
-        password: ${{ secrets.SSH_PASSWORD }}
+        username: ${{ secrets.PRODUCAO_USER }}
+        host: ${{ secrets.PRODUCAO_HOST }}
+        password: ${{ secrets.PRODUCAO_PASSWORD }}
         #CASO FOR UTILIZAR CONEXÃO VIA SSH, DESCOMENTE O CAMPO ABAIXO E COMENTE O CAMPO ACIMA
-        #key: KEY SSH AQUI
+        #key: ${{ secrets.PRODUCAO_SSH }}
         script: |
           cd /var/www/html/NOME_APLICACAO
           php artisan down
